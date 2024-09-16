@@ -8,10 +8,12 @@ using OrderPresentationApi.ViewModels;
 
 namespace OrderPresentationApi.Services
 {
-    public interface IClienteService
-    {
-        Cliente GetCliente(int id);
-        ServiceResponse CadastrarCliente(CreateClienteViewModel cliente);
+    public interface IClienteService {
+        Task<Cliente> GetById (int id);
+        Task<List<Cliente>> GetAll ();
+        Task<Cliente> CreateCliente (ClienteViewModel cliente);
+        Task<bool> UpdateCliente (int id, ClienteViewModel cliente);
+        Task<bool> DeleteCliente (int id);
     }
 
     public class ServiceResponse
@@ -20,48 +22,54 @@ namespace OrderPresentationApi.Services
         public string Message { get; set; }
     }
 
-    public class ClienteService : IClienteService
-    {
+    public class ClienteService : IClienteService {
 
         private readonly IClienteRepository _clienteRepository;
 
-        public ClienteService(IClienteRepository clienteRepository)
-        {
+        public ClienteService (IClienteRepository clienteRepository) {
             _clienteRepository = clienteRepository;
         }
 
-        public Cliente GetCliente(int id)
-        {
-            return _clienteRepository.GetClienteById(id);
+
+        public async Task<Cliente> GetById (int id) {
+            return await _clienteRepository.GetByIdAsync(id);
         }
 
-        public ServiceResponse CadastrarCliente(CreateClienteViewModel cliente)
-        {
-            try
-            {
-                var novoCliente = new Cliente
-                {
-                    Name = cliente.Name,
-                    Email = cliente.Email,
-                    Telefone = cliente.Telefone
-                };
+        public async Task<List<Cliente>> GetAll () {
+            return await _clienteRepository.GetAllAsync();
+        }
 
-                _clienteRepository.AddCliente(novoCliente);
+        public async Task<Cliente> CreateCliente (ClienteViewModel cliente) {
+            var novoCliente = new Cliente(cliente);
+            await _clienteRepository.CreateAsync(novoCliente);
 
-                return new ServiceResponse { Success = true, Message = "Cliente adicionado com sucesso." };
+            return novoCliente;
+        }
 
-            } catch (Exception ex)
-            {
-                string error = "";
+        public async Task<bool> UpdateCliente (int id, ClienteViewModel cliente) {
+            var clienteEncontrado = await _clienteRepository.GetByIdAsync(id);
 
-                while (ex != null)
-                {
-                    error += ex.InnerException.Message;
-                    ex = ex.InnerException;
-                }
+            if (clienteEncontrado == null)
+                return false;
 
-                return new ServiceResponse { Success = false, Message = error };
-            }
+            clienteEncontrado.Name = cliente.Name;
+            clienteEncontrado.Telefone = cliente.Telefone;
+            clienteEncontrado.Email = cliente.Email;
+
+            await _clienteRepository.UpdateAsync(clienteEncontrado);
+
+            return true;
+        }
+        
+        public async Task<bool> DeleteCliente (int id) {
+            var clienteEncontrado = await _clienteRepository.GetByIdAsync(id);
+
+            if (clienteEncontrado == null)
+                return false;
+
+            await _clienteRepository.DeleteAsync(clienteEncontrado);
+
+            return true;
         }
     }
 }
