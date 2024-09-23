@@ -4,12 +4,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using OrderPresentationApi.Models;
 using OrderPresentationApi.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace OrderPresentationApi.Repositories
 {
     public interface IMaterialRepository {
         Task<TipoMaterial> GetTipoByIdAsync (int id);
         Task<List<TipoMaterial>> GetAllTiposAsync ();
+        Task CreateTipoAsync (TipoMaterial tipoMaterial);
+        Task UpdateTipoAsync (TipoMaterial tipoMaterial);
+        Task DeleteTipoAsync (TipoMaterial tipoMaterial);
+        Task<Material> GetByIdAsync (int id);
+        Task<List<Material>> GetAllAsync ();
+        Task CreateAsync (Material material);
+        Task UpdateAsync(Material material);
+        Task DeleteAsync(Material material);
     }
 
     public class MaterialRepository : IMaterialRepository {
@@ -50,29 +59,28 @@ namespace OrderPresentationApi.Repositories
         #endregion
 
         #region Métodos p/ Material
-        public async Task<Material> GetByIdAsync(int id)
-        {
+        public async Task<Material> GetByIdAsync (int id) {
             return await _context.Materiais.FindAsync(id);
         }
 
-        public async Task<List<Material>> GetAllTsAsync()
+        public async Task<List<Material>> GetAllAsync ()
         {
             return await _context.Materiais.ToListAsync();
         }
 
-        public async Task CreateAsync(Material material)
+        public async Task CreateAsync (Material material)
         {
             await _context.Materiais.AddAsync(material);
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateAsync(Material material)
+        public async Task UpdateAsync (Material material)
         {
             _context.Materiais.Update(material);
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(Material material)
+        public async Task DeleteAsync (Material material)
         {
             _context.Materiais.Remove(material);
             await _context.SaveChangesAsync();

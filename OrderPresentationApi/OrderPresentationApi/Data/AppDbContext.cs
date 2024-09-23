@@ -19,7 +19,7 @@ namespace OrderPresentationApi.Data
             modelBuilder.Entity<Material>()
                 .HasOne(m => m.TipoMaterial)
                 .WithMany(t => t.Materiais)
-                .HasForeignKey(m => m.TipoMaterialId);
+                .HasForeignKey(m => m.IdTipoMaterial);
         }
     }
 }
