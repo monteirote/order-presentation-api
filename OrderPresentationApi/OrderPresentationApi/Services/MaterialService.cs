@@ -3,30 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using OrderPresentationApi.Models;
+using OrderPresentationApi.Models.DTOs;
+using OrderPresentationApi.ViewModels;
 
 namespace OrderPresentationApi.Repositories
 {
     public interface IMaterialService {
+
         Task<TipoMaterial> GetTipoByIdAsync(int id);
         Task<List<TipoMaterial>> GetTiposAsync();
-        Task CreateTipoAsync(TipoMaterial tipoMaterial);
-        Task UpdateTipoAsync(TipoMaterial tipoMaterial);
-        Task DeleteTipoAsync(TipoMaterial tipoMaterial);
+        Task<TipoMaterial> CreateTipoAsync (TipoMaterialViewModel tipoMaterial);
+        Task<bool> UpdateTipoAsync (int id, TipoMaterialViewModel tipoMaterial);
+        Task<bool> DeleteTipoAsync (int id);
+
         Task<Material> GetByIdAsync(int id);
         Task<List<Material>> GetAllAsync();
-        Task CreateAsync(Material material);
-        Task UpdateAsync(Material material);
-        Task DeleteAsync(Material material);
+        Task<MaterialDTO> CreateAsync (MaterialViewModel material);
+        Task<bool> UpdateAsync (int id, MaterialViewModel material);
+        Task<bool> DeleteAsync (int id);
+
     }
 
     public class MaterialService : IMaterialService {
 
         private readonly IMaterialRepository _materialRepository;
 
-        public MaterialService (IMaterialRepository materialRepository) {
-            _materialRepository = materialRepository;
-        }
+        public MaterialService(IMaterialRepository materialRepository) => _materialRepository = materialRepository;
 
+        #region Funções TiposMaterial
 
         public async Task<TipoMaterial> GetTipoByIdAsync(int id) {
             return await _materialRepository.GetTipoByIdAsync(id);
@@ -36,19 +40,40 @@ namespace OrderPresentationApi.Repositories
             return await _materialRepository.GetAllTiposAsync();
         }
 
-        public async Task CreateTipoAsync (TipoMaterial tipoMaterial) {
-            await _materialRepository.CreateTipoAsync(tipoMaterial);
+        public async Task<TipoMaterial> CreateTipoAsync(TipoMaterialViewModel tipoMaterial) {
+            var novoTipo = new TipoMaterial(tipoMaterial);
+            await _materialRepository.CreateTipoAsync(novoTipo);
+
+            return novoTipo;
         }
 
-        public async Task UpdateTipoAsync (TipoMaterial tipoMaterial) {
-            await _materialRepository.UpdateTipoAsync(tipoMaterial);
+        public async Task<bool> UpdateTipoAsync (int id, TipoMaterialViewModel tipoMaterial) {
+            var tipoEncontrado = await _materialRepository.GetTipoByIdAsync(id);
+
+            if (tipoEncontrado is null)
+                return false;
+
+            tipoEncontrado.Nome = tipoMaterial.Nome;
+
+            await _materialRepository.UpdateTipoAsync(tipoEncontrado);
+
+            return true;
         }
 
-        public async Task DeleteTipoAsync (TipoMaterial tipoMaterial) {
-            await _materialRepository.DeleteTipoAsync(tipoMaterial);
+        public async Task<bool> DeleteTipoAsync (int id) {
+            var tipoEncontrado = await _materialRepository.GetTipoByIdAsync(id);
+
+            if (tipoEncontrado is null)
+                return false;
+
+            await _materialRepository.DeleteTipoAsync(tipoEncontrado);
+
+            return true;
         }
 
+        #endregion
 
+        #region Funções Material
         public async Task<Material> GetByIdAsync (int id) {
             return await _materialRepository.GetByIdAsync(id);
         }
@@ -57,16 +82,43 @@ namespace OrderPresentationApi.Repositories
             return await _materialRepository.GetAllAsync();
         }
 
-        public async Task CreateAsync (Material material) {
-            await _materialRepository.CreateAsync(material);
+        public async Task<MaterialDTO> CreateAsync (MaterialViewModel material) {
+            var novoMaterial = new Material(material);
+
+            var tipoExistente = await _materialRepository.GetTipoByIdAsync(material.IdTipoMaterial);
+
+            if (tipoExistente is null)
+                return null;
+
+            await _materialRepository.CreateAsync(novoMaterial);
+
+            return new MaterialDTO(novoMaterial);
         }
 
-        public async Task UpdateAsync (Material material) {
-            await _materialRepository.UpdateAsync(material);
+        public async Task<bool> UpdateAsync (int id, MaterialViewModel material) {
+            var materialEncontrado = await _materialRepository.GetByIdAsync(id);
+
+            if (materialEncontrado is null)
+                return false;
+
+            materialEncontrado.Name = material.Nome;
+            materialEncontrado.IdTipoMaterial = materialEncontrado.Id;
+
+            await _materialRepository.UpdateAsync(materialEncontrado);
+
+            return true;
         }
 
-        public async Task DeleteAsync (Material material) {
-            await _materialRepository.DeleteAsync(material);
+        public async Task<bool> DeleteAsync (int id) {
+            var materialEncontrado = await _materialRepository.GetByIdAsync(id);
+
+            if (materialEncontrado is null)
+                return false;
+
+            await _materialRepository.DeleteAsync(materialEncontrado);
+
+            return true;
         }
+        #endregion
     }
 }

@@ -15,6 +15,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IClienteService, ClienteService>();
 
+builder.Services.AddScoped<IMaterialRepository, MaterialRepository>();
+builder.Services.AddScoped<IMaterialService, MaterialService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

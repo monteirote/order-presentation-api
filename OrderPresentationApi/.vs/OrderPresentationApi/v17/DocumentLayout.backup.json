@@ -1,22 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Matheus\\Desktop\\proj\\OrderPresentationAPI\\OrderPresentationApi\\",
+  "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\matheus\\desktop\\proj\\orderpresentationapi\\orderpresentationapi\\orderpresentationapi\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|solutionrelative:orderpresentationapi\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\usu\u00E1rio\\desktop\\rep\\rep-api\\orderpresentationapi\\orderpresentationapi\\services\\materialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|solutionrelative:orderpresentationapi\\services\\materialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\matheus\\desktop\\proj\\orderpresentationapi\\orderpresentationapi\\orderpresentationapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|solutionrelative:orderpresentationapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\usu\u00E1rio\\desktop\\rep\\rep-api\\orderpresentationapi\\orderpresentationapi\\models\\dtos\\materialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|solutionrelative:orderpresentationapi\\models\\dtos\\materialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\matheus\\desktop\\proj\\orderpresentationapi\\orderpresentationapi\\orderpresentationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\usu\u00E1rio\\desktop\\rep\\rep-api\\orderpresentationapi\\orderpresentationapi\\viewmodels\\materialviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|solutionrelative:orderpresentationapi\\viewmodels\\materialviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\usu\u00E1rio\\desktop\\rep\\rep-api\\orderpresentationapi\\orderpresentationapi\\controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|solutionrelative:orderpresentationapi\\controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\usu\u00E1rio\\desktop\\rep\\rep-api\\orderpresentationapi\\orderpresentationapi\\models\\tipomaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|solutionrelative:orderpresentationapi\\models\\tipomaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\usu\u00E1rio\\desktop\\rep\\rep-api\\orderpresentationapi\\orderpresentationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|solutionrelative:orderpresentationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\matheus\\desktop\\proj\\orderpresentationapi\\orderpresentationapi\\orderpresentationapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|solutionrelative:orderpresentationapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\usu\u00E1rio\\desktop\\rep\\rep-api\\orderpresentationapi\\orderpresentationapi\\models\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|solutionrelative:orderpresentationapi\\models\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\usu\u00E1rio\\desktop\\rep\\rep-api\\orderpresentationapi\\orderpresentationapi\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|solutionrelative:orderpresentationapi\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\usu\u00E1rio\\desktop\\rep\\rep-api\\orderpresentationapi\\orderpresentationapi\\viewmodels\\clienteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|solutionrelative:orderpresentationapi\\viewmodels\\clienteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|c:\\users\\usu\u00E1rio\\desktop\\rep\\rep-api\\orderpresentationapi\\orderpresentationapi\\viewmodels\\tipomaterialviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982C084F-5D18-4492-B27F-2E7EAEF40057}|OrderPresentationApi\\OrderPresentationApi.csproj|solutionrelative:orderpresentationapi\\viewmodels\\tipomaterialviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,59 +49,137 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 228,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\Matheus\\Desktop\\proj\\OrderPresentationAPI\\OrderPresentationApi\\OrderPresentationApi\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "OrderPresentationApi\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\Matheus\\Desktop\\proj\\OrderPresentationAPI\\OrderPresentationApi\\OrderPresentationApi\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "OrderPresentationApi\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Title": "MaterialDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Models\\DTOs\\MaterialDTO.cs",
+              "RelativeDocumentMoniker": "OrderPresentationApi\\Models\\DTOs\\MaterialDTO.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Models\\DTOs\\MaterialDTO.cs",
+              "RelativeToolTip": "OrderPresentationApi\\Models\\DTOs\\MaterialDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T14:33:35.117Z",
+              "WhenOpened": "2024-09-24T00:14:49.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MaterialViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\ViewModels\\MaterialViewModel.cs",
+              "RelativeDocumentMoniker": "OrderPresentationApi\\ViewModels\\MaterialViewModel.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\ViewModels\\MaterialViewModel.cs",
+              "RelativeToolTip": "OrderPresentationApi\\ViewModels\\MaterialViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T00:11:51.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Matheus\\Desktop\\proj\\OrderPresentationAPI\\OrderPresentationApi\\OrderPresentationApi\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Program.cs",
               "RelativeDocumentMoniker": "OrderPresentationApi\\Program.cs",
-              "ToolTip": "C:\\Users\\Matheus\\Desktop\\proj\\OrderPresentationAPI\\OrderPresentationApi\\OrderPresentationApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Program.cs",
               "RelativeToolTip": "OrderPresentationApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T23:58:16.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TipoMaterial.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Models\\TipoMaterial.cs",
+              "RelativeDocumentMoniker": "OrderPresentationApi\\Models\\TipoMaterial.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Models\\TipoMaterial.cs",
+              "RelativeToolTip": "OrderPresentationApi\\Models\\TipoMaterial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T23:35:14.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TipoMaterialViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\ViewModels\\TipoMaterialViewModel.cs",
+              "RelativeDocumentMoniker": "OrderPresentationApi\\ViewModels\\TipoMaterialViewModel.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\ViewModels\\TipoMaterialViewModel.cs",
+              "RelativeToolTip": "OrderPresentationApi\\ViewModels\\TipoMaterialViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T23:18:11.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Material.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Models\\Material.cs",
+              "RelativeDocumentMoniker": "OrderPresentationApi\\Models\\Material.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Models\\Material.cs",
+              "RelativeToolTip": "OrderPresentationApi\\Models\\Material.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T23:14:46.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClienteViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\ViewModels\\ClienteViewModel.cs",
+              "RelativeDocumentMoniker": "OrderPresentationApi\\ViewModels\\ClienteViewModel.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\ViewModels\\ClienteViewModel.cs",
+              "RelativeToolTip": "OrderPresentationApi\\ViewModels\\ClienteViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T14:33:28.587Z",
+              "WhenOpened": "2024-09-23T23:14:40.715Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\Matheus\\Desktop\\proj\\OrderPresentationAPI\\OrderPresentationApi\\OrderPresentationApi\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "OrderPresentationApi\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\Matheus\\Desktop\\proj\\OrderPresentationAPI\\OrderPresentationApi\\OrderPresentationApi\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "OrderPresentationApi\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Title": "MaterialService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Services\\MaterialService.cs",
+              "RelativeDocumentMoniker": "OrderPresentationApi\\Services\\MaterialService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Services\\MaterialService.cs",
+              "RelativeToolTip": "OrderPresentationApi\\Services\\MaterialService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T14:22:28.58Z",
+              "WhenOpened": "2024-09-23T23:09:37.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\Matheus\\Desktop\\proj\\OrderPresentationAPI\\OrderPresentationApi\\OrderPresentationApi\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "OrderPresentationApi\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\Matheus\\Desktop\\proj\\OrderPresentationAPI\\OrderPresentationApi\\OrderPresentationApi\\WeatherForecast.cs",
-              "RelativeToolTip": "OrderPresentationApi\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Title": "MaterialController.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Controllers\\MaterialController.cs",
+              "RelativeDocumentMoniker": "OrderPresentationApi\\Controllers\\MaterialController.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Controllers\\MaterialController.cs",
+              "RelativeToolTip": "OrderPresentationApi\\Controllers\\MaterialController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAtwF8AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T14:19:27.295Z",
+              "WhenOpened": "2024-09-23T22:22:14.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "OrderPresentationApi\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Desktop\\rep\\rep-api\\OrderPresentationApi\\OrderPresentationApi\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "OrderPresentationApi\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCkAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T14:22:28.58Z",
               "EditorCaption": ""
             }
           ]
