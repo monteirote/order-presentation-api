@@ -17,7 +17,7 @@ namespace OrderPresentationApi.Repositories
         Task<bool> DeleteTipoAsync (int id);
 
         Task<Material> GetByIdAsync(int id);
-        Task<List<Material>> GetAllAsync();
+        Task<List<MaterialDTO>> GetAllAsync();
         Task<MaterialDTO> CreateAsync (MaterialViewModel material);
         Task<bool> UpdateAsync (int id, MaterialViewModel material);
         Task<bool> DeleteAsync (int id);
@@ -78,8 +78,10 @@ namespace OrderPresentationApi.Repositories
             return await _materialRepository.GetByIdAsync(id);
         }
 
-        public async Task<List<Material>> GetAllAsync () {
-            return await _materialRepository.GetAllAsync();
+        public async Task<List<MaterialDTO>> GetAllAsync () {
+            List<Material> materiais = await _materialRepository.GetAllAsync();
+
+            return (from m in materiais select new MaterialDTO(m)).ToList();
         }
 
         public async Task<MaterialDTO> CreateAsync (MaterialViewModel material) {

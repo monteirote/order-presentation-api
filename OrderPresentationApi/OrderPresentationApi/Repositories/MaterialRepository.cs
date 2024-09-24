@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using OrderPresentationApi.Models;
+using OrderPresentationApi.Models.DTOs;
 using OrderPresentationApi.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -63,9 +64,16 @@ namespace OrderPresentationApi.Repositories
             return await _context.Materiais.FindAsync(id);
         }
 
-        public async Task<List<Material>> GetAllAsync ()
-        {
-            return await _context.Materiais.ToListAsync();
+        public async Task<List<Material>> GetAllAsync () {
+            var results = await (from m in _context.Materiais
+                    join tm in _context.TiposMateriais on m.IdTipoMaterial equals tm.Id
+                    select new Material {
+                        Id = m.Id,
+                        Name = m.Name,
+                        TipoMaterial = tm
+                    }).ToListAsync();
+
+            return results;
         }
 
         public async Task CreateAsync (Material material)
