@@ -13,6 +13,7 @@ namespace OrderPresentationApi.Data
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Material> Materiais { get; set; }
         public DbSet<TipoMaterial> TiposMateriais { get; set; }
+        public DbSet<OrdemServico> OrdensServico { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
