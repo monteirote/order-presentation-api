@@ -99,12 +99,13 @@ namespace OrderPresentationApi.Repositories
 
         public async Task<bool> UpdateAsync (int id, MaterialViewModel material) {
             var materialEncontrado = await _materialRepository.GetByIdAsync(id);
+            var tipoMaterialEncontrado = await _materialRepository.GetTipoByIdAsync(material.IdTipoMaterial);
 
-            if (materialEncontrado is null)
+            if (materialEncontrado is null || tipoMaterialEncontrado is null)
                 return false;
 
             materialEncontrado.Name = material.Nome;
-            materialEncontrado.IdTipoMaterial = materialEncontrado.Id;
+            materialEncontrado.IdTipoMaterial = material.IdTipoMaterial;
 
             await _materialRepository.UpdateAsync(materialEncontrado);
 
