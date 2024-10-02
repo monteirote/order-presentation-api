@@ -21,5 +21,6 @@ namespace OrderPresentationApi.Models
         [Required]
         [StringLength(50)]
         public string Nome { get; set; }
+        public List<Material> Materiais { get; set; }
     }
 }

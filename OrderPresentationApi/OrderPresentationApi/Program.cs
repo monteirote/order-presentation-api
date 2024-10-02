@@ -18,6 +18,10 @@ builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<IMaterialRepository, MaterialRepository>();
 builder.Services.AddScoped<IMaterialService, MaterialService>();
 
+builder.Services.AddScoped<IOrdemServicoRepository, OrdemServicoRepository>();
+builder.Services.AddScoped<IOrdemServicoService, OrdemServicoService>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

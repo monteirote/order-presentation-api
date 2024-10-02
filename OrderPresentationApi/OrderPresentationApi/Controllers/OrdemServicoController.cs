@@ -36,5 +36,33 @@ namespace OrderPresentationApi.Controllers {
 
             return Ok(ordemServicoEncontrada);
         }
-    }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Post (OrdemServicoViewModel ordemServico) {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var ordemServicoCriada = await _ordemServicoService.CreateOrdemServico(ordemServico);
+
+            return CreatedAtAction(nameof(GetById), new { ordemServicoCriada.Id }, ordemServicoCriada);
+        }
+
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update (int id, OrdemServicoViewModel ordemServico) {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var success = await _ordemServicoService.UpdateOrdemServico(id, ordemServico);
+
+            return success ? NoContent() : NotFound();
+        }
+
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete (int id) {
+            return await _ordemServicoService.DeleteOrdemServico(id) ? NoContent() : NotFound();
+        }
+    } 
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using OrderPresentationApi.Models;
 using OrderPresentationApi.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace OrderPresentationApi.Repositories {
 
@@ -33,17 +34,17 @@ namespace OrderPresentationApi.Repositories {
 
         public async Task CreateAsync (OrdemServico ordemServico) {
             await _context.OrdensServico.AddAsync(ordemServico);
-            await _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
         public async Task UpdateAsync (OrdemServico ordemServico) {
             _context.OrdensServico.Update(ordemServico);
-            await _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
         public async Task DeleteAsync (OrdemServico ordemServico) {
-            _context.OrdensServico.Delete(ordemServico);
-            await _context.SaveChanges();
+            _context.OrdensServico.Remove(ordemServico);
+            await _context.SaveChangesAsync();
         }
     }
 }

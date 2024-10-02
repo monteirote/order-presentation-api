@@ -12,6 +12,8 @@ namespace OrderPresentationApi.Services {
         Task<OrdemServico> GetById (int id);
         Task<List<OrdemServico>> GetAll ();
         Task<OrdemServico> CreateOrdemServico (OrdemServicoViewModel ordemServico);
+        Task<bool> UpdateOrdemServico (int id, OrdemServicoViewModel ordemServico);
+        Task<bool> DeleteOrdemServico (int id);
     }
 
     public class OrdemServicoService : IOrdemServicoService {
@@ -40,7 +42,7 @@ namespace OrderPresentationApi.Services {
 
             await _ordemServicoRepository.CreateAsync(novaOrdemServico);
 
-            return novoCliente;
+            return novaOrdemServico;
         }
 
         public async Task<bool> UpdateOrdemServico (int id, OrdemServicoViewModel ordemServico) {
@@ -58,7 +60,7 @@ namespace OrderPresentationApi.Services {
             return true;
         }
 
-        public async Task<bool> DeleteOrdemServico (int id, OrdemServicoViewModel ordemServico) {
+        public async Task<bool> DeleteOrdemServico (int id) {
             var ordemServicoEncontrada = await _ordemServicoRepository.GetByIdAsync(id);
 
             if (ordemServicoEncontrada is null)
