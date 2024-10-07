@@ -21,6 +21,9 @@ builder.Services.AddScoped<IMaterialService, MaterialService>();
 builder.Services.AddScoped<IOrdemServicoRepository, OrdemServicoRepository>();
 builder.Services.AddScoped<IOrdemServicoService, OrdemServicoService>();
 
+builder.Services.AddScoped<IQuadroRepository, QuadroRepository>();
+builder.Services.AddScoped<IQuadroService, QuadroService>();
+
 
 var app = builder.Build();
 

@@ -5,7 +5,11 @@ using OrderPresentationApi.ViewModels;
 namespace OrderPresentationApi.Services {
 
     public interface IQuadroService {
-
+        Task<Quadro> FindById (int id);
+        Task<List<Quadro>> FindAll ();
+        Task<Quadro> Create (QuadroViewModel quadro);
+        Task<bool> Update (int id, QuadroViewModel quadro);
+        Task<bool> Delete (int id);
     }
 
     public class QuadroService : IQuadroService {
