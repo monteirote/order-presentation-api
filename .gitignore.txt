@@ -1,1 +1,55 @@
-.vs/
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.generated.cs
+*.designer.cs
+*.g.cs
+*.g.i.cs
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Rider & VSCode-specific
+.idea/
+.vscode/
+
+# Log files
+*.log
+*.tlog
+
+# Package directories
+*.nuget/
+*.npm/
+node_modules/
+
+# ASP.NET specific
+*.PublishProfiles/
+wwwroot/
+appsettings.Development.json
+
+# Entity Framework
+Migrations/
+app.db
+
+# Azure Functions
+local.settings.json
+
+# Lock files
+project.lock.json
